@@ -1,0 +1,18 @@
+body { font-family: Arial, sans-serif; background:#eaf1f8; text-align:center; padding:20px; }
+h1,h2 { color:#004080; }
+.box { background:#fff; padding:20px; border-radius:12px; display:inline-block; margin:20px auto; }
+input, select, button { padding:10px; margin:10px; width:250px; border-radius:6px; }
+button { background:#004080; color:white; border:none; cursor:pointer; }
+button:hover { background-color:#00264d; }
+.back-btn { background:#ff6600; margin-bottom:20px; }
+.top-nav { background-color:#004080; padding:10px; display:flex; justify-content:center; gap:15px; border-radius:8px; margin-bottom:20px; flex-wrap:wrap; }
+.top-nav .nav-btn { padding:10px 20px; border:none; border-radius:6px; cursor:pointer; color:white; background-color:#0073e6; font-weight:bold; }
+.top-nav .nav-btn:hover { background-color:#005bb5; }
+.queue-counter { color:white; background-color:#0073e6; padding:5px 10px; border-radius:6px; margin-left:10px; font-weight:bold; }
+ul { text-align:left; display:inline-block; }
+.official { color:#cc6600; font-weight:bold; }
+.senior { color:#009933; font-weight:bold; }
+.general { color:#004080; font-weight:bold; }
+.general.priority { color:red; font-weight:bold; animation: blink 1s infinite; }
+.served { color:gray; text-decoration:line-through; }
+@keyframes blink { 0%{opacity:1;} 50%{opacity:0.5;} 100%{opacity:1;} }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Citizen Queue</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/navigation.js" defer></script>
+    <script src="js/queueFeatures.js" defer></script>
+</head>
+<body>
+
+<nav class="top-nav">
+    <button class="nav-btn" onclick="goToHome()">Home</button>
+    <button class="nav-btn" onclick="goToTokens()">Citizen Queue</button>
+    <button class="nav-btn" onclick="goToAdmin()">Admin Panel</button>
+    <span class="queue-counter">Officials: <span id="officialCount">0</span></span>
+    <span class="queue-counter">Seniors: <span id="seniorCount">0</span></span>
+    <span class="queue-counter">General: <span id="generalCount">0</span></span>
+</nav>
+
+<button class="btn back-btn" onclick="goToHome()">Back to Login</button>
+
+<h1>MRO Citizen Queue System</h1>
+
+<div class="box">
+    <label>Name:</label>
+    <input type="text" id="name">
+
+    <label>Visitor Type:</label>
+    <select id="type">
+        <option value="general">General</option>
+        <option value="senior">Senior Citizen</option>
+        <option value="official">Official / Employee</option>
+    </select>
+
+    <label>Purpose of Visit:</label>
+    <select id="purpose">
+        <option>New Certificate Application</option>
+        <option>Land Mutation Issue</option>
+        <option>Meet MRO Officer</option>
+        <option>Submit Documents</option>
+        <option>Grievance / Complaint</option>
+    </select>
+
+    <button onclick="generateToken()">Generate Token</button>
+</div>
+
+<hr>
+
+<h2>Your Token Details</h2>
+<div id="userDetails"></div>
+
+<hr>
+
+<h2>Official Queue</h2>
+<ul id="officialList"></ul>
+
+<h2>Senior Citizen Queue</h2>
+<ul id="seniorList"></ul>
+
+<h2>General Queue</h2>
+<ul id="generalList"></ul>
+
+</body>
+</html>

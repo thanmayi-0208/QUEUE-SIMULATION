@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - MRO Queue</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/navigation.js" defer></script>
+    <script src="js/adminFeatures.js" defer></script>
+</head>
+<body>
+
+<nav class="top-nav">
+    <button class="nav-btn" onclick="goToHome()">Home</button>
+    <button class="nav-btn" onclick="goToTokens()">Citizen Queue</button>
+    <button class="nav-btn" onclick="goToAdmin()">Admin Panel</button>
+    <span class="queue-counter">Officials: <span id="officialCount">0</span></span>
+    <span class="queue-counter">Seniors: <span id="seniorCount">0</span></span>
+    <span class="queue-counter">General: <span id="generalCount">0</span></span>
+</nav>
+
+<button class="btn back-btn" onclick="goToHome()">Back to Login</button>
+
+<h1>Admin Panel - MRO Queue</h1>
+
+<div class="box">
+    <button onclick="serveNextToken()">Serve Next Token</button>
+    <button onclick="resetTokens()">Reset Tokens</button>
+    <button onclick="showVisitorCount()">Visitor Count</button>
+    <p><b>Tokens Served:</b> <span id="servedCount">0</span></p>
+</div>
+
+<hr>
+
+<h2>Official Queue</h2>
+<ul id="officialList"></ul>
+
+<h2>Senior Citizen Queue</h2>
+<ul id="seniorList"></ul>
+
+<h2>General Queue</h2>
+<ul id="generalList"></ul>
+
+</body>
+</html>
